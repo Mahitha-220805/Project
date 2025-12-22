@@ -102,3 +102,21 @@ h3{
 .media audio{
     margin-top:70px;
 }
+.tabs{
+    display: flex;
+    justify-content:space-around;
+    margin: 20px;
+    border-radius: 10px;
+    flex-wrap:wrap;
+}
+.tab{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 30%;
+    background-color: rgb(87, 67, 41);
+    color: bisque;
+}
+th,tr,td{
+    border: 1px solid black;
+    padding:10px;
+}
