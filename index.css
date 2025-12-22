@@ -12,8 +12,6 @@ body{
     font-size: 20px;
     font-weight: bold; 
 }
-
-
 .content{
     display:flex;
     align-items: center;
@@ -91,17 +89,20 @@ h3{
     color: white;
     font-weight: bold;
 }
+video{
+    margin-left:80px;
+    width:80%;
+    height:70%;
+    display: block;
+    object-fit: cover;
+}
 .media{
+    margin-top: 70px;
     display:flex;
-    margin:auto;
-    justify-content:space-around;
-    margin: 20px;
-    border-radius: 10px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-.media audio{
-    margin-top:70px;
-}
+
 .tabs{
     display: flex;
     justify-content:space-around;
@@ -112,11 +113,28 @@ h3{
 .tab{
     border: 1px solid black;
     border-collapse: collapse;
-    width: 30%;
     background-color: rgb(87, 67, 41);
     color: bisque;
 }
 th,tr,td{
     border: 1px solid black;
     padding:10px;
+}
+button{
+    display: block;
+    background-color: rgb(230, 101, 127);
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 50px;
+    width:150px;
+}
+button a{
+    text-decoration: none;
+    color:black;
+}
+.review{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
 }

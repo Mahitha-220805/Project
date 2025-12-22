@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Review Page</title>
+        <style>
+            h4{
+                margin-top: 50px;
+            }
+            legend{
+                margin: 20px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .name{
+                width: 300px;
+                height:30px;
+                margin-bottom: 10px;
+            }
+            .last{
+                margin-left: 50px;
+            }
+            .em{
+                margin-left: 90px;
+                width: 300px;
+                height:30px;
+            }
+            .msg{
+                margin-left: 90px;
+                font-size: small;
+            }
+            .button{
+                display: block;
+                border: 2px solid black;
+                border-radius: 10px;
+                height: 30px;
+                width:150px;
+            }
+            .b{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            textarea{
+                margin-left: 40px;
+            }
+            body{
+                background-color: darksalmon;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="review">
+            <h3>Customer Feedback form</h3>
+            
+            <form>
+                <fieldset style="border: 2px solid black;">
+                    <legend >Customers Information:</legend>
+                        <label ><b>First Name:    </b></label>
+                        <input type="text" placeholder="Your First name" class="name">
+                        <lable class="last"><b>Last Name:</b></lable>
+                        <input type="text" placeholder="Last name" class="name"><br><br>
+                        <label><b>E-mail address:</b></label><br>
+                        <input type="email" placeholder="you@example.com" class="em">
+                        <p class="msg">Your email is safe in our hands</p>
+                        <label><b>Phone Number:</b></label><br>
+                        <input type="text" placeholder="123-456-7890" class="em">
+                </fieldset>
+                <br><br>
+                <fieldset style="border: 2px solid black;">
+                    <legend>Feedback Section:</legend>
+                        <p>Please Take a moment to give us your feedback on our services!</p><br><br>
+
+                        <label><b>Did our product meet your expectations?</b></label><br>
+                        <input type="radio" name="feed" checked>Exceeded expectations(5)<br>
+                        <input type="radio" name="feed">Met expectations(4)<br>
+                        <input type="radio" name="feed">Below expectations(3)<br>
+                        <input type="radio" name="feed">Other <br>
+                        <br><br>
+                        <label><b>Additional Comments:</b></label><br>
+                        <textarea cols="72" rows="4" placeholder="Share your experience with us"></textarea>
+                </fieldset>
+                <br>
+                <br>
+                <div class="b">
+                <input type="submit" name="submit" class="button">
+                </div>
+            </form>
+           
+        </div>
+    </body>
+</html>
