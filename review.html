@@ -2,10 +2,15 @@
     <head>
         <title>Review Page</title>
         <style>
-            h4{
-                margin-top: 50px;
+            @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+            .h{
+                text-align: center;
+                font-family: 'Roboto',sans-serif;
+                margin-top:50px;
             }
             legend{
+                font-family: 'Lobster',cursive;
+                font-size: 25px;
                 margin: 20px;
                 margin-top: 20px;
                 margin-bottom: 20px;
@@ -30,30 +35,40 @@
             .button{
                 display: block;
                 border: 2px solid black;
-                border-radius: 10px;
+                border-radius: 20px;
                 height: 30px;
                 width:150px;
+            }
+            button a{
+                text-decoration: none;
+                color: black;
             }
             .b{
                 display: flex;
                 align-items: center;
-                justify-content: center;
+               
+                justify-content: space-around;
             }
             textarea{
                 margin-left: 40px;
             }
             body{
-                background-color: darksalmon;
+                background-color:rgb(231, 226, 153);
+            }
+            form{
+                font-family: 'Great Vibes',cursive;
             }
         </style>
     </head>
     <body>
         <div class="review">
-            <h3>Customer Feedback form</h3>
-            
+            <div class="h">
+                <h3>Customer Feedback</h3>
+            </div>
             <form>
                 <fieldset style="border: 2px solid black;">
                     <legend >Customers Information:</legend>
+                        
                         <label ><b>First Name:    </b></label>
                         <input type="text" placeholder="Your First name" class="name">
                         <lable class="last"><b>Last Name:</b></lable>
@@ -81,7 +96,8 @@
                 <br>
                 <br>
                 <div class="b">
-                <input type="submit" name="submit" class="button">
+                <input type="submit" name="submit">
+                 <button><a href="c:\Users\Mahi\OneDrive\Desktop\Project\index.html">Home</a></button>
                 </div>
             </form>
            

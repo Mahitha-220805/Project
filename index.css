@@ -2,6 +2,7 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: lightpink;
 }
 
 .navbar{
@@ -12,6 +13,7 @@ body{
     font-size: 20px;
     font-weight: bold; 
 }
+
 .content{
     display:flex;
     align-items: center;
@@ -102,7 +104,9 @@ video{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
+.tables{
+    background-color: lightpink;
+}
 .tabs{
     display: flex;
     justify-content:space-around;
@@ -125,7 +129,7 @@ button{
     background-color: rgb(230, 101, 127);
     border: 2px solid black;
     border-radius: 10px;
-    height: 50px;
+    height: 30px;
     width:150px;
 }
 button a{
