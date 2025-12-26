@@ -5,15 +5,39 @@ body{
     background-color: lightpink;
 }
 
-.navbar{
-    margin-top:10px;
-    padding:60px;
-    color: rgb(15, 7, 7);
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold; 
+.navbar input{
+    margin-left: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
-
+.navbar{
+    position: fixed;
+    top:0;
+    text-align: center;
+    width:100%;
+    background-color: lightpink;
+    padding:10px 0;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 182, 193);
+    padding: 12px;
+    font-family: "montserrat";
+    font-weight: bold;
+    top:55px;
+    position: fixed;
+    width:100%;
+}
+.list a{
+    text-decoration: none;
+    color:rgb(102, 0, 51);
+    text-decoration: underline;
+}
+.list a:hover{
+    color: rgb(255, 20, 147);
+}
 .content{
     display:flex;
     align-items: center;
@@ -23,11 +47,13 @@ body{
     height: 60%;
     margin:20px;
     align-items: center;
+    margin-top: 120px;
 }
 .img{
     flex-basis:50%;
     margin:30px;
     height:300px;
+    margin-top: 90px;
 }
 .para{
     padding:30px;
