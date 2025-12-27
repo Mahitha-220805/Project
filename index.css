@@ -19,6 +19,10 @@ body{
     background-color: lightpink;
     padding:10px 0;
 }
+.navbar a{
+   
+    font-weight:bold;
+}
 .list{
     display: flex;
     justify-content: space-around;
@@ -53,7 +57,7 @@ body{
     flex-basis:50%;
     margin:30px;
     height:300px;
-    margin-top: 90px;
+    margin-top: 40px;
 }
 .para{
     padding:30px;
@@ -163,8 +167,8 @@ button a{
     color:black;
 }
 .review{
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
     display: flex;
-    
+    margin: 20px;
 }
