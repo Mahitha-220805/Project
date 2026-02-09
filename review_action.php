@@ -3,14 +3,17 @@
 $conn = mysqli_connect('localhost:3307', 'root', '', 'review_db');
 
 
-if( isset($_POST['submit']) ){
-    $fname = mysqli_real_escape_string($conn, $_POST['fname']);
-    $lname = mysqli_real_escape_string($conn, $_POST['lname']);
-    $email = mysqli_real_escape_string($conn, $_POST['email']);
-    $phn = mysqli_real_escape_string($conn, $_POST['phn']);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $fname = trim($_POST['fname']);
+    $lname = trim($_POST['lname']);
+    $email = trim($_POST['email']);
+    $phn = trim($_POST['phn']);
+
+    // Clean input
+    $fname = strtolower($fname);
+    $lname = ucwords($lname);
 }
-
-
 $sql = "INSERT INTO reviews (firstName,lastname ,email,phn)
         VALUES ('$fname','$lname', '$email', '$phn')";
 
