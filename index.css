@@ -53,20 +53,29 @@ body{
     align-items: center;
     margin-top: 120px;
 }
-.img{
-    flex-basis:50%;
-    margin:30px;
-    height:300px;
-    margin-top: 40px;
+.content {
+  position: relative;
+  
 }
-.para{
-    padding:30px;
-    font-family:"source sans pro";
-    font-size:20px;
-    
+
+.content img {
+  width: 100%;
 }
-.para h1{
-    color:rgb(102, 8, 78);
+
+.p{
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.p1{
+position: absolute;
+  top: 90%;
+  left: 5%;
+  color: white;
+  font-size: 20px;
 }
 .navbar a{
     text-decoration: none;
@@ -90,37 +99,19 @@ h3{
     border-radius: 10px;
     flex-wrap:wrap;
 }
+.im1{
+    margin-bottom: 30px;
+    border:1px solid black;
+    box-shadow:4px 4px 4px gray;
+    border-radius:10px;
+    padding:10px;
+    background-color: rgb(219, 81, 146);
+    color:#ccc
+}
+.im1 img:hover{
+    box-shadow:6px 6px 6px black;
+}
 
-.sale img{
-    border-radius: 20px;
-    height: 300px;
-    width: 100%;
-    margin-bottom:30px;
-}
-.sale h2{
-    color: rgb(7, 6, 6);
-    text-align: left;
-    margin-left: 20px;
-    font-size: 30px;
-    font-family:montserrat;
-}
-.content.shop{
-    background-color: rgb(97, 27, 68);
-    color: white;
-    width: 100px;
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px;
-    margin-left: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.shop a{
-    margin-top:30px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
 video{
     margin-left:80px;
     width:80%;
